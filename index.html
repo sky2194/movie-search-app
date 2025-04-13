@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Info Finder</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎬 Movie Info Search</h1>
+
+    <div class="search-box">
+      <input type="text" id="movieInput" placeholder="Enter movie name..." />
+      <button onclick="searchMovie()">Search</button>
+    </div>
+
+    <div id="movieDetails" class="movie-details">
+      <!-- Movie info will go here -->
+    </div>
+  </div>
+
+  <div id="loading" class="loading-spinner" style="display:none;">
+    <img src="https://i.imgur.com/LLw68dC.gif" alt="Loading...">
+  </div>
+
+  <script src="src/app.js"></script>
+</body>
+</html>

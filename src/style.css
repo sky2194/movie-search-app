@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.movie-details {
+  background-color: #2e2e2e;
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+}
+
+.movie-details img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.movie-details h2 {
+  margin-top: 15px;
+}
+
+.loading-spinner {
+  text-align: center;
+  margin: 20px;
+}
+
+.loading-spinner img {
+  width: 50px;
+  height: 50px;
+}
+.loading-spinner p {
+  color: #e50914;
+  font-size: 18px;
+}
+.loading-spinner.hidden {
+  display: none;
+}
+.loading-spinner.visible {
+  display: block;
+}
+.loading-spinner img {
+  animation: spin 1s linear infinite;
+}
